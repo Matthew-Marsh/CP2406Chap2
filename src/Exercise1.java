@@ -1,4 +1,4 @@
-public class Exercise_2_1 {
+public class Exercise1 {
 
     public static void main(String[] args) {
         System.out.println("       **    **         **    **");
@@ -6,5 +6,5 @@ public class Exercise_2_1 {
         System.out.println("     *    **    *     *    **    *");
         System.out.println("    *            *   *            *");
     }
-    
+
 }
