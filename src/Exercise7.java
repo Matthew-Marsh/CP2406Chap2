@@ -1,4 +1,3 @@
-import org.w3c.dom.Text;
 import textio.TextIO;
 
 public class Exercise7 {

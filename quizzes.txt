@@ -1,0 +1,124 @@
+Quiz 1:
+
+Question 1: One of the components of a computer is its CPU. What is a CPU and what role does it play in a computer?
+Answer: The Central Processing Unit executes a program that is stored as a sequence of machine language instructions in the main memory.
+
+Question 2:  Explain what is meant by an "asynchronous event." Give some examples.
+Answer: Asynchronous events are events that can happen at unpredictable times. An example of this could be an error or a sudden and unexpected input to the
+machine.
+
+Question 3:  What is the difference between a "compiler" and an "interpreter"?
+A compiler translates the entire program into machine language at one time, but can be run on the same computer any number of times, however if it needs to be
+run on a different computer it would need to be compiled again. Interpreter translates language into machine language at an instruction by instruction level,
+only interpreting as needed in a repeating loop.
+
+Question 4:  Explain the difference between high-level languages and machine language.
+High level languages such as Python, Java or C++ are the understandable languages used by programmers to build their programs. However, they cannot be run directly
+on any computer. High-level languages instead need to be interpretted into machine language that are simple instructions that can be executed directly by the CPU.
+
+Question 5: If you have the source code for a Java program, and you want to run that program, you will need both a compiler and an interpreter. What does the Java
+compiler do, and what does the Java interpreter do?
+The Java compiler translates high-level language into machine language that can be run on a JVM (Java Virtual Machine) called Java Bytecode. The Java Interpreter
+required is dependent on the system that it needs to run on, however it interprets the Java Bytecode into machine language that the operating system can understand.
+
+Question 6: What is a subroutine?
+A subroutine is a set of instructions that are grouped to perform a certain task. Such as, print() is a group of instructions that is used to print a message.
+
+Question 7:  Java is an object-oriented programming language. What is an object?
+An object is a module containing data and subroutines, which has an internal state (data) and can process messages (calls to subroutines.)
+
+Question 8: What is a variable? (There are four different ideas associated with variables in Java. Try to mention all four aspects in your answer.
+Hint: One of the aspects is the variable's name.)
+A variable is a memory location that has been given a name so that it can be referred to and used by a program. The four different idas associated with variables
+in Java are that is has a name, location, type and a value.
+
+Question 9: Java is a "platform-independent language." What does this mean?
+Java is compiled into Java Bytecode which can be run on any platform, the platform just needs to have its own interpreter to run the Bytecode into its
+associated machine language. So once compiled, Java does not need to be compiled again to run on different platforms.
+
+Question 10: What is the "Internet"? Give some examples of how it is used. (What kind of services does it provide?)
+The internet is a network that spans globally, connecting computers across the network. It can be accessed from any location to provide information and data
+that would otherwise either take time to access or be inaccessible, such as visiting websites.
+
+
+Quiz 2:
+
+Question 1: Briefly explain what is meant by the syntax and the semantics of a programming language. Give an example to illustrate the difference between a
+syntax error and a semantics error.
+Syntax are the basic vocabulary of the language, the program is syntactically correct if it is able to be compiled without errors. The semantics are the meaning
+behind the program. Syntax error would be using the incorrect language or operation to perform a task and thus being unable to be compiled. While a semantics error
+can be compiled but will give the incorrect result, i.e. using division in an int variable will round the number, which is a problem if the user wanted precision
+to decimal places.
+
+Question 2:  What does the computer do when it executes a variable declaration statement. Give an example.
+When the program declares a variable, it assigns a location and gives it a name.
+"double number;" would create a memory location for a double-type variable and name it 'number'
+
+Question 3: What is a type, as this term relates to programming?
+Type when assigned to a variable, is limiting the variable to what data that it would be able to store. As per above example, int would limit a variable to only
+hold whole number integers.
+
+Question 4: One of the primitive types in Java is boolean. What is the boolean type? Where are boolean values used? What are its possible values?
+A boolean type is a binary type that can either be True or False. Booleans are usually used when the data will only need to be considered to be either True or False.
+I.e. If something is On then On would be True, if it were Off, then On would be false.
+
+Question 5a: What is the meaning of ++?
+++ will incrementally add 1 to a variable.
+
+Question 5b: What is the meaning of &&?
+&& is the shorthand of comparing/using two expressions using 'And'.
+
+Question 5c: What is the meaning of !=?
+!= is the shorthand of 'Does not Equal' used in expressions.
+
+Question 6: Explain what is meant by an assignment statement, and give an example. What are assignment statements used for?
+Assignment statements are used to assign value to a variable.
+Eg. int number = 1 would assign the value of '1' to an int type variable named 'number'
+
+Question 7: What is meant by precedence of operators?
+Precedence of operators is the prioritised order that they would be executed by the program from a statement.
+Multiplication has a higher precedence than addition.
+
+Question 8:  What is a literal?
+A literal is something that is typed into the program to represent a value, it's a name for a constant value.
+
+Question 9: In Java, classes have two fundamentally different purposes. What are they?
+Classes have two fundamentally different purposes, first is that they group together variables and subroutines and second they can be used to describe objects.
+
+Question 10: What is the difference between the statement "x = TextIO.getDouble();" and the statement "x = TextIO.getlnDouble();"
+While they will both capture the next double type input and assign it to the variable x, getlnDouble will continue reading input until the user presses enter,
+extra characters will be discarded though.
+
+Question 11: Explain why the value of the expression 2 + 3 + "test" is the string "5test" while the value of the expression "test" + 2 + 3 is the string "test23".
+What is the value of "test" + 2 * 3 ?
+The difference is the order that the statement would be processed. The program would add the numbers together and then add the string to the end of the value, where
+the second statement would append the numbers to the string value. The precedence rules would take effect in the last statement, with multiple running first the numbers
+would be multiplied together and then added to the string literal. Result would be 'test6'
+
+Question 12:  Integrated Development Environments such as Eclipse often use syntax coloring, which assigns various colors to the characters in a program to reflect
+the syntax of the language. A student notices that Eclipse colors the word String differently from int, double, and boolean. The student asks why String should be a
+different color, since all these words are names of types. What's the answer to the student's question?
+The answer is that String is a class in Java and not one of the primitive variable types.
+
+Question 13: What is the purpose of an import directive, such as import textio.TextIO or import java.util.Scanner?
+The purpose of import is to import the variables and subroutines from another Class or package to be used within the program.
+
+Question 14: Write a complete program that asks the user to enter the number of "widgets" they want to buy and the cost per widget. The program should then output
+the total cost for all the widgets. Use System.out.printf to print the cost, with two digits after the decimal point. You do not need to include any comments in
+the program.
+
+import textio.TextIO;
+
+public class WidgetsCost {
+    public static void main(String[] args) {
+        int numberOfWidgets;
+        double widgetCost;
+        double widgetTotal;
+        System.out.print("How many widgets? ");
+        numberOfWidgets = TextIO.getlnDouble();
+        System.out.print("What is the cost per widget? ");
+        widgetCost = TextIO.getlnDouble();
+        widgetTotal = numberOfWidgets * widgetCost;
+        System.out.printf("The total cost of the Widgets is: $%1.2f", widgetTotal);
+    }
+}
